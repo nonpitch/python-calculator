@@ -10,7 +10,8 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(self.calc.add(1, 2), 3)
         self.assertEqual(self.calc.add(100, 200), 300)  
         self.assertEqual(self.calc.add(-100, 50), -50)
-    
+
+    # Add the following test methods to the TestCalculator class:
     def test_subtract(self):
         self.assertEqual(self.calc.subtract(40, 20), 20)
         self.assertEqual(self.calc.subtract(20, 40), -20)
@@ -26,8 +27,6 @@ class TestCalculator(unittest.TestCase):
     def test_modulo(self):
         self.assertEqual(self.calc.modulo(100, 30), 10)
         self.assertEqual(self.calc.modulo(100, 20), 0)
-
-    # Add the following test methods to the TestCalculator class:
 
 if __name__ == '__main__':
     unittest.main()
